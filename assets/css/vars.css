@@ -1,0 +1,28 @@
+/* variaveis.css */
+
+/* cores*/
+:root {
+    --header-height: 48px;
+    --font-semi: 600;
+    /*Cores*/
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    --black-color:#000;
+    /*fontes*/
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 32px; /* 2rem */
+    --h2-font-size: 20px; /* 1.25rem */
+    --normal-font-size: 15px; /* .938rem */
+    --smaller-font-size: 12px; /* .75rem */
+    
+    /*margem*/
+    --mb-2: 16px; /* 1rem */
+    --mb-4: 32px; /* 2rem */
+    --mb-5: 40px; /* 2.5rem */
+    --mb-6: 48px; /* 3rem */
+
+    /*===== z index =====*/
+    --z-back: -10;
+    --z-fixed: 100;
+  }

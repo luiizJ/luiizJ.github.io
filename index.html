@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/vars.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mob.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"><span class="on">•</span>LuizJanampa</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">INICIO</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">SOBRE</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">TECNOLOGIAS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">PROJETOS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-abrir" id="menu">
+                <i class="bx bx-menu">
+                </i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+
+                <i class="bx bx-x"></i>
+                <ul>
+                    <li>
+                        <a href="#home">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#about">SOBRE</a>
+                    </li>
+                    <li>
+                        <a href="#skills">TECNOLOGIAS</a>
+                    </li>
+                    <li>
+                        <a href="#projects">PROJETOS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="p-main">
+        <!--INICIO-->
+        <section class="home bd-grid" id="home">
+            <div class="home__content">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        OLÁ, EU SOU <span class="home__title-color">LUIZ</span><br />
+                        <span class="loand">WEB DEVELOPER</span>
+                    </h1>
+                    <a href="https://drive.google.com/uc?export=download&id=1HH733voZuqubLWQn5RnvEU3CzJ7mY3Q_"
+                        class="button" id="link">CURRÍCULO</a>
+                </div>
+                <div class="myphoto">
+                    <div class="photo">
+                        <img src="assets/img/luiz.jpg" alt="Foto de Luiz" />
+                    </div>
+                </div>
+            </div>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/luiz-everson-899896273/" class="home__social-icon" target="_blank">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/_lluizj/" class="home__social-icon" target="_blank">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://github.com/luiizJ" class="home__social-icon" target="_blank">
+                    <i class="bx bxl-github"></i></a>
+            </div>
+        </section>
+        <!--SOBRE-->
+        <section class="about section" id="about">
+            <h2 class="section-title">
+                <span class="sobre">SOBRE</span>
+            </h2>
+            <div class="about__container bd-grid" id="sectin-desct">
+                <div class="about__img">
+                    <img src="assets/img/luiz.jpg" alt="" />
+                </div>
+                <div class="mob">
+                    <h2 class="about__subtitle">Prazer, luiz.</h2>
+                    <p class="about__text">
+                        Sou um estudante de Análise e Desenvolvimento de Sistemas na UNIESP, focado em me tornar
+                        um desenvolvedor full-stack. Concluí cursos e imersões de programação,possuo habilidades
+                        em HTML, CSS, JavaScript, React,logica de programação e programação orientada a objetos
+                        com Java, Tenho experiência em desenvolver projetos, aplicando conceitos e técnicas adquiridas
+                        ao longo do meu aprendizado, Estou determinado a ingressar no mercado de trabalho, buscando
+                        oportunidades para aplicar minhas habilidades e crescer profissionalmente.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--TECNOLOGIAS-->
+        <section class="skills section" id="skills">
+            <div class="effect">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <h2 class="section-title">MINHAS TECNOLOGIAS</h2>
+                <ul class="transition">
+                    <li class="card">
+                        <div class="img"><img src="./assets/img/pngegg.png" alt="img" draggable="false"></div>
+                        <h2>HTML5</h2>
+                        <span>B7web e imerções</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./assets/img/css3-logo-png-transparent.png" alt="img"
+                                draggable="false"></div>
+                        <h2>CSS3</h2>
+                        <span>B7web e imerções</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./assets/img/pngeggjs.png" alt="img" draggable="false"></div>
+                        <h2>JAVASCRIPT</h2>
+                        <span>B7web e imerções</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="./assets/img/pngeggrc.png" alt="img" draggable="false"></div>
+                        <h2>REACT</h2>
+                        <span>EM PROGRESSÃO (B7web)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img">
+                            <img src="./assets/img/other.png" alt="img" draggable="false">
+                        </div>
+                        <h2>OUTROS</h2>
+                        <span style="text-align: center;">JAVA(EM PROGRESSÃO)</span>
+                    </li>
+                    <li class="card">
+                        <div class="img">
+                            <img src="./assets/img/other.png" alt="img" draggable="false">
+                        </div>
+                        <h2>OUTROS</h2>
+                        <span style="text-align: center;">LOGICA DE PROGRMAÇÃO <br />(CURSO EM VIDEO)</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+        <!--PROJETOS-->
+        <section class="projects" id="projects">
+            <div class="interface">
+                <h2 class="section-title">PROJETOS </h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(./assets/img/projetosImg/pj-burger.png);">
+                        <div class="description">EM BREVE</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(./assets/img/projetosImg/vazio.jpg);">
+                        <div class="description">EM CONSTRUÇÃO</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(./assets/img/projetosImg/vazio.jpg);">
+                        <div class="description">EM CONSTRUÇÃO</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(./assets/img/projetosImg/vazio.jpg);">
+                        <div class="description">EM CONSTRUÇÃO</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--rodape-->
+    <footer>
+        <div class="footer-sections">
+            <div class="texts">
+                <div class="autor">
+                    <h2>LuizJ</h2>
+                </div>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/luiz-everson-899896273/" class="icons-sections"
+                        target="_blank">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_lluizj/" class="icons-sections" target="_blank">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://github.com/luiizJ" class="icons-sections" target="_blank">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <div class="copy">
+                    <h2>Codifique, Conquiste e Inspire</h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
