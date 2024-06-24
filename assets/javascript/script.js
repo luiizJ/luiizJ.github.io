@@ -11,12 +11,40 @@ btnOp.addEventListener('click', ()=>{
 })
 
 
-
+//navb
+ // Função para destacar a aba ativa na navbar
+ document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav__link');
+    // Função para remover a classe active de todos os links
+    const removeActiveClasses = () => {
+      navLinks.forEach(link => link.classList.remove('active'));
+    };
+    // Função para adicionar a classe active ao link correspondente à seção visível
+    const addActiveClass = (id) => {
+      const link = document.querySelector(`.nav__link[href="#${id}"]`);
+      if (link) {
+        link.classList.add('active');
+      }
+    };
+    // Função para verificar qual seção está visível
+    const handleScroll = () => {
+      let index = sections.length;
+      while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+      removeActiveClasses();
+      addActiveClass(sections[index].id);
+    };
+    // Adiciona o evento de scroll
+    window.addEventListener('scroll', handleScroll);
+    // Chama a função handleScroll ao carregar a página
+    handleScroll();
+  });
 
 // BUTTON INITIAL
 document.getElementById('link').addEventListener('mouseenter', () => link.textContent = 'Baixar Currículo');
 document.getElementById('link').addEventListener('mouseleave', () => link.textContent = 'Curriculo');
 
+//cards
 const wrapper = document.querySelector(".effect");
 const carousel = document.querySelector(".transition");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -80,4 +108,3 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
-
