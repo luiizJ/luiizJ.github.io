@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        margin: 0 auto;
   }
   .about__subtitle {
     padding-top: 37px;
@@ -64,7 +64,7 @@
     padding-top: 1rem;
   }
   .skills {
-    min-height: 105vh;
+    min-height: 88vh;
     padding: 25px 40px;
   }
   .img-port {
@@ -74,10 +74,8 @@
     flex-direction: column;
   }
   .about__text {
-    font-size: 2.0vh;
-    text-align: justify;
-    width: 210px;
-    height: 300px;
+    font-size: 2.5vh;
+    
 }
 }
 
